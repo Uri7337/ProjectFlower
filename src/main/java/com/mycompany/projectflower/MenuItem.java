@@ -7,5 +7,5 @@ package com.mycompany.projectflower;
  */
 public interface MenuItem {
     public String name();
-    public void execute();
+    public void execute(int user);
 }
