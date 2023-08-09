@@ -15,7 +15,7 @@ public class DatabaseHandler {
             String connectionString = "jdbc:sqlite:c:/ProgramsUri/ALL_Files/Sqlitedb/ProjectFlowerdb/Game.db";
             // create a connection to the database
             conn = DriverManager.getConnection(connectionString);
-            System.out.println("Connected.");
+            System.out.println("Connected...");
         }catch (SQLException e) {
             System.out.println(e.getMessage());
         } 
