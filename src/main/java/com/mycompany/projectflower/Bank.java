@@ -3,24 +3,28 @@ package com.mycompany.projectflower;
 
 import java.util.List;
 
-public class Bank implements MenuItem, Menu {
+public class Bank implements MenuItem, Menu, Executable {
     private static int money = 100;
-    String name = "Bank";
+    private String name;
+
+    public Bank() {
+        this.name = "Bank";
+    }
     
     public List<MenuItem> getItems(){
         
     }
     
     public String getName(){
-        
+        return name;
     }
     
     public void execute(int user){
         accBalance();
     }
-    public String name(){
+    public String Menuname(){
         
-       return name;
+       return getName();
     }
     public int getMoney() {
         return money;

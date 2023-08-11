@@ -2,9 +2,10 @@
 package com.mycompany.projectflower;
 
 
-public class Exit {
-    public void menu(){
-        System.out.println("5. Exit");
+public class Exit implements MenuItem, Executable{
+    String name = "Exit";
+    public String name(){
+        return name;
     }
     
     public void Exitthegame(){
