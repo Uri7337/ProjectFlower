@@ -1,9 +1,19 @@
 
 package com.mycompany.projectflower;
 
-public class Bank implements MenuItem {
+import java.util.List;
+
+public class Bank implements MenuItem, Menu {
     private static int money = 100;
     String name = "Bank";
+    
+    public List<MenuItem> getItems(){
+        
+    }
+    
+    public String getName(){
+        
+    }
     
     public void execute(int user){
         accBalance();

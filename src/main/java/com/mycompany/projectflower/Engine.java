@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Engine {
     //list menu item
-    MainMenu mm;
+    Menu m;
     User usr;
     DatabaseHandler dh;
     /*
@@ -20,7 +20,7 @@ public class Engine {
     public void startGame(){
         usr = new User();
         dh = new DatabaseHandler();
-        mm = new MainMenu();
+        m = new MainMenu();
         /*
             acc = new Bank();
             f = new Flower();
