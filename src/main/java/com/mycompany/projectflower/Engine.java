@@ -57,7 +57,7 @@ public class Engine {
      public void showmenu(){
         //index + jméno položky
         //for cyklus přes lista zavloám menu
-        acc.menu();
+        acc.name();
         sh.menu();
         f.menu();
         mg.menu();

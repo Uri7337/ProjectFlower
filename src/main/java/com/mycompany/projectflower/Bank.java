@@ -1,11 +1,16 @@
 
 package com.mycompany.projectflower;
 
-public class Bank {
+public class Bank implements MenuItem {
     private static int money = 100;
+    String name = "Bank";
     
-    public void menu(){
-        System.out.println("1. Bank");
+    public void execute(int user){
+        accBalance();
+    }
+    public String name(){
+        
+       return name;
     }
     public int getMoney() {
         return money;
