@@ -9,13 +9,25 @@ public class MainMenu implements Menu{
     private List<MenuItem> menuItems = new ArrayList<>();
     private String name = "MainMenu";
     //System.out.println(menuItems.get(user));
-    public String getName(){
-        
-       return name;
-    }
     
     public MainMenu() {
         menuItems.add(new Bank());
+        menuItems.add(new Shop());
+        menuItems.add(new Flower());
+        menuItems.add(new Minigame());
+        menuItems.add(new Exit());
+        
+        
+    }
+    
+    public void showMenu(){
+        System.out.println(menuItems);
+        
+        
+    }
+    public String getName(){
+        
+       return name;
     }
     
     public List<MenuItem> getItems(){

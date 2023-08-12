@@ -1,6 +1,8 @@
 package com.mycompany.projectflower;
 
-public class Flower {
+import java.util.List;
+
+public class Flower implements MenuItem, Menu, Executable {
     private int seeds = 0;
     private int growState = 0;
    
@@ -26,6 +28,21 @@ public class Flower {
        
        
    }
+
+    @Override
+    public String itemName() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public List<MenuItem> getItems() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void execute(int user) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
    
    
 }

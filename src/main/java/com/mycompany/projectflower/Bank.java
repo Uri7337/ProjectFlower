@@ -11,9 +11,7 @@ public class Bank implements MenuItem, Menu, Executable {
         this.name = "Bank";
     }
     
-    public List<MenuItem> getItems(){
-        
-    }
+    
     
     public String getName(){
         return name;
@@ -36,5 +34,15 @@ public class Bank implements MenuItem, Menu, Executable {
    
     public void accBalance(){
         System.out.println("You have:"+getMoney()+"$");
+    }
+
+    @Override
+    public String itemName() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public List<MenuItem> getItems() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
