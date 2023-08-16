@@ -7,7 +7,13 @@ import java.util.List;
 
 
 public class Minigame implements MenuItem, Menu, Executable {
+    private String name = "Minigame";
+    
     Bank acc;
+    
+    public String getName(){
+        return name;
+    }
     
     public void menu(){
         System.out.println("4. Minigame");
@@ -24,9 +30,9 @@ public class Minigame implements MenuItem, Menu, Executable {
 
     @Override
     public String itemName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return getName();
     }
-
+    
     @Override
     public List<MenuItem> getItems() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody

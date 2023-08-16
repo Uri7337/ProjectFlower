@@ -38,7 +38,7 @@ public class Bank implements MenuItem, Menu, Executable {
 
     @Override
     public String itemName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return getName();
     }
 
     @Override

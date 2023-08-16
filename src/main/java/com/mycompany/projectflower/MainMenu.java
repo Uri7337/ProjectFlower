@@ -11,7 +11,7 @@ public class MainMenu implements Menu{
     //System.out.println(menuItems.get(user));
     
     public MainMenu() {
-        menuItems.add(new Bank());
+        menuItems.add(new Bank().itemName());
         menuItems.add(new Shop());
         menuItems.add(new Flower());
         menuItems.add(new Minigame());
@@ -21,7 +21,7 @@ public class MainMenu implements Menu{
     }
     
     public void showMenu(){
-        System.out.println(menuItems);
+        System.out.println(menuItems.itemName());
         
         
     }

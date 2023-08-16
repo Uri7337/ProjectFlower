@@ -3,8 +3,9 @@ package com.mycompany.projectflower;
 
 
 public class Exit implements MenuItem, Executable{
-    String name = "Exit";
-    public String name(){
+    private String name = "Exit";
+    
+    public String getName(){
         return name;
     }
     
@@ -14,7 +15,7 @@ public class Exit implements MenuItem, Executable{
 
     @Override
     public String itemName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return getName();
     }
 
     @Override
