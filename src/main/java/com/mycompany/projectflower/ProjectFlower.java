@@ -7,7 +7,8 @@ public class ProjectFlower {
    
     
     public static void main(String[] args) {
-        Engine game = new Engine();
+        //předat usera a databázi
+        Engine game = new Engine(new MainMenu());
         game.startGame();
     }
    

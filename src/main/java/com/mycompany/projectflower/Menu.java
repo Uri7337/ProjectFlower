@@ -9,6 +9,6 @@ import java.util.List;
  */
 public interface Menu {
     public List<MenuItem> getItems();
-    //public String getMenuName();
+    public String getName();
         
 }

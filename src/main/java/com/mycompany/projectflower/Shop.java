@@ -4,11 +4,12 @@ package com.mycompany.projectflower;
 import java.util.HashMap;
 import java.util.List;
 
-public class Shop implements MenuItem, Menu, Executable {
+public class Shop implements MenuItem, Menu {
     private HashMap<String, Integer> shopFlowers;
-    
-    public void menu(){
-        System.out.println("2. Shop");
+    private String name = "Shop";
+    @Override
+    public String getName() {
+        return name;
     }
     
     public HashMap<String, Integer> getShopFlowers() {
@@ -33,9 +34,11 @@ public class Shop implements MenuItem, Menu, Executable {
     }
 
     @Override
-    public void execute(int user) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void execute(User user) {
+        getName();
     }
+
+    
     
     
 }

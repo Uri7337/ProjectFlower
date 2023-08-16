@@ -3,7 +3,7 @@ package com.mycompany.projectflower;
 
 import java.util.List;
 
-public class Bank implements MenuItem, Menu, Executable {
+public class Bank implements MenuItem, Menu {
     private static int money = 100;
     private String name;
 
@@ -17,7 +17,7 @@ public class Bank implements MenuItem, Menu, Executable {
         return name;
     }
     
-    public void execute(int user){
+    public void execute(User user){
         accBalance();
     }
     public String Menuname(){

@@ -6,7 +6,7 @@ import java.util.List;
 
 
 
-public class Minigame implements MenuItem, Menu, Executable {
+public class Minigame implements MenuItem, Menu {
     private String name = "Minigame";
     
     Bank acc;
@@ -39,8 +39,8 @@ public class Minigame implements MenuItem, Menu, Executable {
     }
 
     @Override
-    public void execute(int user) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void execute(User user) {
+        getName();
     }
     
     
